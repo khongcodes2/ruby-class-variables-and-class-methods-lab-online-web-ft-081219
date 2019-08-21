@@ -14,6 +14,10 @@ class Song
     @@genres.push(genre)
   end
 
+  def self.count
+    @@count
+  end
+
   def self.artists
     @@artists
   end
