@@ -1,5 +1,6 @@
 class Song
   attr_accessor :name, :artist, :genre
+  
   @@count=0
   @@artists=[]
   @@genres=[]
@@ -13,6 +14,12 @@ class Song
     @@genres.push(genre) unless @@genres.include?(genre)
   end
 
-  def artists
+  def self.artists
+    @@artists
+  end
+  
+  def self.genres
+    @@genres
+  end
   
 end
